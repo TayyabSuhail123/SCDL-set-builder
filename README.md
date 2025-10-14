@@ -18,9 +18,11 @@ This project automates the process of downloading tracks from SoundCloud, analyz
    pip install yt-dlp ffmpeg-python librosa python-dotenv langchain-openai
    ```
 3. **Set your OpenAI API key**:
-   - Add your key to `.env`:
+   - Copy `.env.example` to `.env` and add your key:
      ```
-     OPENAI_API_KEY=sk-...
+     cp .env.example .env
+     # Edit .env and add your OpenAI API key
+     OPENAI_API_KEY=sk-YourOpenAIKeyHere
      ```
 
 ## Usage
