@@ -53,6 +53,15 @@ requirements.txt        # Python dependencies
 - You can adjust analysis parameters in `track_analyzer.py`.
 - The summary prompt can be edited in `track_summarizer.py` for different DJ set logic.
 
+## How the AI Summary Works
+The DJ set summary is generated using an AI language model (OpenAI GPT) via LangChain. After tracks are downloaded and analyzed for BPM, key, and energy, the agent:
+1. Collects metadata for each track.
+2. Passes this metadata to the LLM (Large Language Model) with a custom prompt.
+3. The LLM suggests a DJ set order, transitions, and mixing reasons based on musical features (BPM, key, energy).
+4. The summary is printed in the terminal for you to review and use.
+
+You can customize the prompt in `app/track_summarizer.py` to change how the summary is generated or what details are emphasized.
+
 ## Troubleshooting
 - Ensure all dependencies are installed and your `.env` file contains a valid OpenAI API key.
 - If you see errors about missing packages, run `pip install` for the required modules.
