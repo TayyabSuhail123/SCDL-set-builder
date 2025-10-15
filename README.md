@@ -1,4 +1,4 @@
-# DJ Set Builder & SoundCloud Downloader
+# AI DJ Set Builder & SoundCloud Downloader
 
 ## Overview
 This project automates the process of downloading tracks from SoundCloud, analyzing their musical features, and building a DJ set with AI-powered recommendations.
